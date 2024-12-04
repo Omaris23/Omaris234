@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            width: calc(33% - 2rem);
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .testimonials {
+            background: #f4f4f4;
+            padding: 3rem 2rem;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+      <!-- Encabezado -->
+      <header>
+        <h1>Restaurante Sabores</h1>
+        <p>¡Disfruta de una experiencia gastronómica única!</p>
+    </header>
+
+    <!-- Encabezado -->
+   
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    
+    <!-- Sección Nosotros -->
+    <section class="section" id="nosotros">
+        <h2>Nosotros</h2>
+        <img src="imagen1.jpg" alt="Una hermosa vista">
+        <h3>Misión</h3>
+        <p>Ser reconocidos por brindar a nuestros clientes sensaciones agradables y momentos felices.
+            Posicionarnos en el corazón de las familias palmiranas y de todos los que nos visitan.
+            Contribuir y aportar nuestro granito de arena, para generar una colombia feliz y en paz; que
+            brinde un mejor futuro a nuestras próximas generaciones.</p>
+        <H3>Visión</H3>
+        <p>Somos una empresa dedicada a brindar momentos inolvidables y servicios gastronómicos de alta
+            calidad; ponemos todo nuestro “amor” y máximo empeño en beneficio de nuestros clientes;
+            desarrollamos nuestro servicio a partir de los talentos y los valores de nuestros
+            colaboradores, somos una empresa que día a día lucha por desarrollar mejores condiciones
+            laborales y un mejor nivel de vida para nuestros colaboradores y sus familias, en beneficio de
+            la organización.</p>
+    </section>
+
+</body>
+</html>

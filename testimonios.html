@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background-color: #f8f8f8;
+        }
+
+        .opiniones-section {
+            background: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .opiniones-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .opinion-card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .opinion-card {
+            width: 300px;
+            background: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .opinion-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .opinion-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ff5722;
+        }
+
+        .opinion-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .opinion-text {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .add-opinion {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .add-opinion button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .add-opinion button:hover {
+            background: #ff5722;
+        }
+
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            width: calc(33% - 2rem);
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .testimonials {
+            background: #f4f4f4;
+            padding: 3rem 2rem;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <!-- Encabezado -->
+        <header>
+          <h1>Restaurante Sabores</h1>
+          <p>¡Disfruta de una experiencia gastronómica única!</p>
+      </header>
+  
+      <!-- Navegación -->
+      <nav>
+          <ul>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="testimonios.html">Testimonios</a></li>
+              <li><a href="reserva.html">Reserva</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </body>
+    <!-- Sección de Opiniones -->
+    <section class="opiniones-section" id="opiniones">
+        <h2>Opiniones de Nuestros Clientes</h2>
+        <div class="opinion-card-container">
+            <!-- Opinión 1 -->
+            <div class="opinion-card">
+                <div class="opinion-title">Imperdible En Bucaramanga</div>
+                <div class="opinion-date">Marzo de 2023</div>
+                <p class="opinion-text">
+                    Excelente restaurante con una ambientación única. Excelente calidad de comida para aquellos que quieren un platillo con mayor elaboración a una carne asada (especialidad de Bucaramanga).
+                </p>
+                <p class="opinion-text">
+                    El Asado de Tira y el Rollo de pollo con espárragos son una delicia. La entrada de chalupas de pulpo le faltaba un poco de proteína para sentir el sabor del mismo, pero para nada malos sabores.
+                </p>
+            </div>
+            <!-- Más opiniones -->
+            <div class="opinion-card">
+                <div class="opinion-title">Una Experiencia Única</div>
+                <div class="opinion-date">Febrero de 2023</div>
+                <p class="opinion-text">
+                    La atención fue espectacular desde que entramos. Nos encantó la variedad de opciones en el menú. La focaccia con mermelada de pimentones asados es algo que jamás olvidaré.
+                </p>
+            </div>
+            <div class="opinion-card">
+                <div class="opinion-title">Excelente Atención</div>
+                <div class="opinion-date">Enero de 2023</div>
+                <p class="opinion-text">
+                    Un lugar acogedor con comida deliciosa. La calidad de los ingredientes se nota en cada plato. Sin duda volveremos pronto.
+                </p>
+            </div>
+        </div>
+        <!-- Botón para añadir opiniones -->
+        <div class="add-opinion">
+            <button onclick="agregarOpinion()">Añadir Mi Opinión</button>
+        </div>
+    </section>
+
+    <script>
+        function agregarOpinion() {
+            alert("¡Gracias por querer compartir tu opinión! Próximamente habilitaremos esta función.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Gourmet</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: url('banner.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            width: calc(33% - 2rem);
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .testimonials {
+            background: #f4f4f4;
+            padding: 3rem 2rem;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Restaurante Gourmet</h1>
+        <p>Donde cada bocado cuenta una historia.</p>
+    </header>
+
+    <!-- Sección Menú -->
+    <section class="section" id="menu">
+        <h2>Menú</h2>
+        <p>Explora nuestras deliciosas opciones:</p>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Plato Estrella</h3>
+                <p>Descripción del plato estrella.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Especialidad</h3>
+                <p>Descripción de la especialidad.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Postre</h3>
+                <p>Descripción del postre.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section" id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+            <img src="foto4.jpg" alt="Foto 4">
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"La comida aquí es increíble. El mejor lugar para una cena especial."</p>
+            <p>- Cliente feliz</p>
+        </div>
+        <div class="testimonial">
+            <p>"Un ambiente acogedor y platos deliciosos. Muy recomendado."</p>
+            <p>- Cliente satisfecho</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Reserva -->
+    <section class="section" id="reserva">
+        <h2>Reserva tu Mesa</h2>
+        <div class="form-container">
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="mensaje">Mensaje o requerimientos:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Restaurante Gourmet. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
